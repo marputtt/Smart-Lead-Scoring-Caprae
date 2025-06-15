@@ -228,36 +228,6 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-## 🔮 Future Enhancements
 
-- Database integration (PostgreSQL/MongoDB)
-- User authentication and multi-tenancy
-- Email integration for lead outreach
-- Advanced analytics and reporting
-- Machine learning model improvements
-- API integrations (CRM systems)
-- Real-time collaboration features
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-1. Check the troubleshooting section above
-2. Review the project structure and ensure all files are in place
-3. Verify that both backend and frontend servers are running
-4. Check browser console for any JavaScript errors
-
----
 
 **Happy Lead Scoring! 🎯** 
