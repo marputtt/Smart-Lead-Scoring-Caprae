@@ -1,0 +1,251 @@
+/* CSV Uploader Styles */
+
+.csv-uploader {
+  margin-bottom: 2rem;
+}
+
+.upload-area {
+  border: 2px dashed #475569;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1e293b;
+}
+
+.upload-area:hover {
+  border-color: #10b981;
+  background-color: #0f172a;
+}
+
+.upload-area.dragging {
+  border-color: #10b981;
+  background-color: #0f172a;
+  transform: scale(1.02);
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.upload-content h3 {
+  font-size: 1.5rem;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.upload-content p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.upload-hint {
+  font-size: 0.875rem;
+  color: #64748b;
+  max-width: 400px;
+}
+
+.processing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.processing p {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #1e293b;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+.error-icon {
+  font-size: 1.25rem;
+}
+
+/* CSV Preview Styles */
+.csv-preview {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.csv-preview h3 {
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.csv-preview p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.scroll-hint {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.scroll-hint span {
+  color: #10b981;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.preview-table-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  max-width: 100%;
+  /* Add smooth scrolling */
+  scroll-behavior: smooth;
+  /* Add scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #1e293b;
+}
+
+/* Webkit scrollbar styling */
+.preview-table-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.preview-table-container::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+.preview-table-container::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.preview-table-container::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.preview-table {
+  width: 100%;
+  min-width: 800px; /* Ensure minimum width for readability */
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.preview-table th {
+  background-color: #334155;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #f1f5f9;
+  border-bottom: 1px solid #475569;
+  white-space: nowrap;
+  min-width: 120px; /* Ensure minimum column width */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.preview-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #334155;
+  color: #94a3b8;
+  max-width: 150px;
+  min-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-table tr:hover {
+  background-color: #334155;
+}
+
+.preview-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .upload-area {
+    padding: 2rem 1rem;
+  }
+
+  .upload-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .upload-hint {
+    font-size: 0.75rem;
+  }
+
+  .csv-preview {
+    padding: 1rem;
+    margin: 0 -1rem; /* Allow full width on mobile */
+    border-radius: 0;
+  }
+
+  .preview-table-container {
+    margin: 0 -1rem 2rem -1rem; /* Full width on mobile */
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .preview-table {
+    min-width: 600px; /* Smaller minimum width on mobile */
+  }
+
+  .preview-table th,
+  .preview-table td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    min-width: 100px;
+    max-width: 120px;
+  }
+
+  .preview-actions {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .scroll-hint {
+    margin: 0 -1rem 1rem -1rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .scroll-hint span {
+    font-size: 0.75rem;
+  }
+} 

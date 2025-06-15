@@ -1,0 +1,376 @@
+/* Smart Insights Styles */
+
+.smart-insights {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  border: 1px solid #334155;
+}
+
+.insights-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.insights-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #f1f5f9;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.insights-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.no-insights {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #64748b;
+}
+
+.insights-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Insights Section */
+.insights-section {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.insights-section h4 {
+  margin: 0 0 1.5rem 0;
+  color: #f1f5f9;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Recommendation Cards */
+.recommendation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.recommendation-card {
+  background: #334155;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.4);
+  border-color: #10b981;
+}
+
+.recommendation-card.call-first {
+  border-left: 4px solid #10b981;
+  background: linear-gradient(135deg, #334155 0%, #1e3a2e 100%);
+}
+
+.recommendation-card.research {
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(135deg, #334155 0%, #3a2e1e 100%);
+}
+
+.recommendation-card.focus {
+  border-left: 4px solid #8b5cf6;
+  background: linear-gradient(135deg, #334155 0%, #2e1e3a 100%);
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.recommendation-icon {
+  font-size: 1.5rem;
+}
+
+.recommendation-header h5 {
+  margin: 0;
+  color: #f1f5f9;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.recommendation-subtitle {
+  margin: 0 0 1rem 0;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.recommendation-leads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lead-chip {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.more-leads {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Insight Cards */
+.insight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.insight-card {
+  background: #334155;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.4);
+  border-color: #10b981;
+}
+
+.insight-card.high-potential {
+  border-left: 4px solid #ef4444;
+  background: linear-gradient(135deg, #334155 0%, #3a1e1e 100%);
+}
+
+.insight-card.undervalued {
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(135deg, #334155 0%, #3a2e1e 100%);
+}
+
+.insight-card.geographic {
+  border-left: 4px solid #0ea5e9;
+  background: linear-gradient(135deg, #334155 0%, #1e2e3a 100%);
+}
+
+.insight-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.insight-icon {
+  font-size: 1.5rem;
+}
+
+.insight-header h5 {
+  margin: 0;
+  color: #f1f5f9;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.insight-subtitle {
+  margin: 0 0 1rem 0;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.insight-count {
+  display: flex;
+  align-items: center;
+  color: #f1f5f9;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.count-badge {
+  background-color: #10b981;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.insight-leads {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.insight-lead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(16, 185, 129, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.lead-name {
+  font-weight: 500;
+  color: #f1f5f9;
+  font-size: 0.875rem;
+}
+
+.lead-score {
+  background-color: #10b981;
+  color: white;
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.geographic-clusters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cluster-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(14, 165, 233, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.cluster-location {
+  font-weight: 500;
+  color: #f1f5f9;
+  font-size: 0.875rem;
+}
+
+.cluster-stats {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+/* Insights Actions */
+.insights-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #475569;
+}
+
+.insight-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.insight-action-btn.primary {
+  background-color: #10b981;
+  color: white;
+}
+
+.insight-action-btn.primary:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.insight-action-btn.secondary {
+  background-color: #334155;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+}
+
+.insight-action-btn.secondary:hover {
+  background-color: #475569;
+  border-color: #64748b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .recommendation-cards,
+  .insight-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .smart-insights {
+    padding: 1.5rem;
+  }
+
+  .insights-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .recommendation-cards,
+  .insight-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .insights-actions {
+    flex-direction: column;
+  }
+
+  .recommendation-card,
+  .insight-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .smart-insights {
+    padding: 1rem;
+  }
+
+  .insights-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .insights-grid {
+    gap: 1.5rem;
+  }
+
+  .recommendation-header,
+  .insight-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .recommendation-icon,
+  .insight-icon {
+    font-size: 1.25rem;
+  }
+} 
